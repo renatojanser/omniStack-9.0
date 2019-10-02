@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import logo from './assets/logo.svg';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="container">
+        <img src={logo} alt="AirCnc"/>
+
+        <div className="content">
+          <p>
+            Ofereça <strong>spots</strong> para programadores e encontre <strong>talentos</strong> para sua empresa
+          </p>
+
+          <form>
+            <label htmlFor="email">E-MAIL *</label>
+            <input type="email" id="email" placeholder="Seu melhor e-mail" />
+            <button className="btn" type="submit">Entrar</button>
+          </form>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
