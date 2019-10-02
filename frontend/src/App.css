@@ -39,7 +39,7 @@ body, input, button {
   padding: 30px;
 }
 
-.content > p {
+.content > div > p {
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 30px;
